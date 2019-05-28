@@ -1,0 +1,11 @@
+package com.cg.service;
+
+public class Car {
+	int carId;
+
+	public Car(int carId) {
+		this.carId = carId;
+	}
+	
+
+}

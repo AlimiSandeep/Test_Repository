@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;CollectionAssignmentUsingJDBC&apos;&#x0D;&#x0A;- Original project: &apos;Lab-1&apos;&#x0D;&#x0A;- Destination element: &apos;CollectionAssignmentUsingJDBC&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     AbstractFactory&#x0D;&#x0A;     AccessLevel&#x0D;&#x0A;     BankProject&#x0D;&#x0A;     CollectionAssignment1" description="Copy folders" element1="AbstractFactory" element2="AccessLevel" element3="BankProject" element4="CollectionAssignment1" files="0" flags="589830" folders="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1553276203932" target="/Lab-1/CollectionAssignmentUsingJDBC" units="0" version="1.0"/>
+</session>

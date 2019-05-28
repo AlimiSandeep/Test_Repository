@@ -1,0 +1,31 @@
+package com.cg.Demo;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class UpperLower {
+public static void main(String[] args) {
+	Scanner in=new Scanner(System.in);
+	int size=in.nextInt();
+	String[] str=new String[size];
+	for(int i=0;i<size;i++)
+		str[i]=in.next();
+	sortStrings(str);
+	if(size%2!=0)
+	{
+	for(int i=0;i<(size/2)+1;i++)
+		System.out.println(str[i].toUpperCase()+" ");
+	}
+	else
+	{
+		for(int i=size/2;i<size;i++)
+			System.out.println(str[i].toLowerCase()+" ");
+	}
+	
+}
+public static String[] sortStrings(String[] str)
+{
+	Arrays.sort(str);
+	return str;
+}
+}

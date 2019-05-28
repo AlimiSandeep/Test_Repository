@@ -1,0 +1,8 @@
+package com.cg.service;
+
+public class Square {
+public int calcArea(int side)
+{
+	return side*side;
+}
+}

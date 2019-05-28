@@ -1,0 +1,27 @@
+package com.cg.classdemo;
+
+import java.util.Scanner;
+
+public class Class_4 {
+public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	int num=scan.nextInt();
+	if(checkNumber(num))
+		System.out.println("Power of 2");
+	else
+		System.out.println("Not a power of 2");
+}
+public static boolean checkNumber(int n)
+{
+	if (n == 0) 
+        return false; 
+      
+    while (n>0) 
+    { 
+        if (n % 2 != 0) 
+            return false; 
+        n = n / 2; 
+    } 
+    return true; 
+}
+}

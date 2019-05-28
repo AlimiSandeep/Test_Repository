@@ -1,0 +1,19 @@
+package com.cg.classdemo;
+
+import java.util.Scanner;
+
+public class Classes_2 {
+public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+	System.out.println(calculateDifference(n));
+}
+public static int calculateDifference(int n)
+{
+	int sum=0;
+	int a=n*(n+1)*(2*n+1)/6;
+	int b=n*(n+1)/2;
+	sum=(int) (a-Math.pow(b, 2));
+	return sum;
+}
+}

@@ -1,0 +1,13 @@
+package com.cg.demos;
+
+public class TaxCal {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

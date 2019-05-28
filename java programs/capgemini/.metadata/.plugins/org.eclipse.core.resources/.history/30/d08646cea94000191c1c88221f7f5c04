@@ -1,0 +1,15 @@
+
+package com.cg.client;
+
+public class Rounder {
+	
+	public static double round2Dec(double num)
+	{
+		return Math.round(num*100)/100.0;
+	}
+	public static void main(String[] args) {
+		System.out.println(round2Dec(58.999999));
+		
+	}
+
+}

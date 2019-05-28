@@ -1,0 +1,16 @@
+package com.cg.demos;
+
+public class CircleDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       double a=52.26;
+       int res=a;
+       System.out.println(res);
+       
+	}
+
+}

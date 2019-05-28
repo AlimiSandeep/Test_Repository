@@ -1,0 +1,10 @@
+package com.cg.flowcontrolAndExceptions;
+
+import java.util.Scanner;
+
+public class Exercise_1 {
+public static void main(String[] args) {
+	Scanner in=new Scanner(System.in);
+	System.out.println("Enter ur choice \n 1-Red 2-Yellow 3-Green");
+}
+}

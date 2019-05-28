@@ -1,0 +1,8 @@
+
+public class TestDemo {
+ static int max=10;
+ public static void main(String[] args) {
+	int max=5;
+	System.out.println(TestDemo.max);
+}
+}

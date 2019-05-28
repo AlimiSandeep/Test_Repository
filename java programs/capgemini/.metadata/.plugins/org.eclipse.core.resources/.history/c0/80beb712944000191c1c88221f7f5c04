@@ -1,0 +1,11 @@
+package com.cg.service;
+
+public class Circle {
+	public double calcArea(){
+		return Math.PI*radius*radius;
+	}
+	public double calcPerimeter(){
+		return Math.2*PI*radius;
+	}
+
+}

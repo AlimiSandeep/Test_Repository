@@ -1,0 +1,25 @@
+package com.cg.flowcontrolAndExceptions;
+
+import java.util.Scanner;
+
+public class Exercise_6 {
+public static void main(String[] args) {
+	Scanner in=new Scanner(System.in);
+	int age=in.nextInt();
+	try
+	{
+		validateAge(age);
+		System.out.println("Entered age is "+age);
+	}
+	catch(AgeException e)
+	{
+		System.out.println(e.getMessage());
+	}
+}
+static  boolean validateAge(int age) throws AgeException
+{
+	if(age<15)
+		throw new AgeException("Invalid age....Age cannot be less than 15");
+	return true;
+}
+}

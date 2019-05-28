@@ -1,0 +1,17 @@
+package com.cg.service;
+
+public class Car {
+	int carId;
+	public Car() {
+		super(1);
+	}
+
+	public Car(int carId) {
+		this.carId = carId;
+		System.out.println("One argument constructor");
+	}
+
+
+	
+
+}

@@ -1,0 +1,21 @@
+package com.cg.flowcontrolAndExceptions;
+
+import java.util.Scanner;
+
+public class Exercise_4 {
+public static void main(String[] args) throws NullPointerException {
+	Scanner in=new Scanner(System.in);
+	try
+	{
+		String firstName=null;
+		String lastName=null;
+	}
+	catch(Exception e)
+	{
+		System.out.println(e.getMessage());
+	}
+		
+	}
+	
+	
+}

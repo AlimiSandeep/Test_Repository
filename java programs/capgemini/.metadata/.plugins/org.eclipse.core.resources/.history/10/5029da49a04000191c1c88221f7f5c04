@@ -1,0 +1,12 @@
+package com.cg.service;
+
+public class Mtable {
+	private int num;
+	public Mtable(int num) throws Exception {
+		if(num>0)
+			this.num=num;
+		else
+			throw new Exception("Number must be grater than zero");
+	}
+
+}

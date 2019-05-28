@@ -1,0 +1,14 @@
+
+public class TestDemo {
+int age=20;
+public TestDemo(int age) {
+	age=age;
+}
+public static void main(String[] args) {
+	TestDemo obj=new TestDemo(10);
+	System.out.println(obj.age);
+}
+
+}
+
+

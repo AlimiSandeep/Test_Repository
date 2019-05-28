@@ -1,0 +1,22 @@
+package com.cg.demos;
+
+import java.util.Scanner;
+
+public class SimpleIntrest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+
+	public static double calcSimple(double amt, int years, float rate) {
+		return amt * years * rate / 100;
+	}
+
+	public static double calcCompound(double amt, int years, float rate) {
+		return amt * Math.pow(1 + rate / 100, years) - amt;
+	}
+}

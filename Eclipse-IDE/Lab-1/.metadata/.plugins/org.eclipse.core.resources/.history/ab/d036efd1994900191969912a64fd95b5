@@ -1,0 +1,25 @@
+package com.cg.flowcontrolAndExceptions;
+
+import java.util.Scanner;
+
+public class Exercise_2_1 {
+public static void main(String[] args) {
+	Scanner in=new Scanner(System.in);
+	int num=in.nextInt();
+	System.out.println(findFibonacci(num));
+}
+static int findFibonacci(int num)
+{
+	int f1,f2,f3=0;
+	f1=1;
+	f2=1;
+	for(int i=2;i<num;i++)
+	{
+		f3=f1+f2;
+		f1=f2;
+		f2=f3;
+	}
+	return f3;
+}
+}
+//1 1 2 3 5 8 13 21 34 55

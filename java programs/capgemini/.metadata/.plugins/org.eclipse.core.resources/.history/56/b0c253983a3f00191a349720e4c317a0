@@ -1,0 +1,40 @@
+package com.cg.demos;
+import java.util.Scanner;
+
+public class Armstrong {
+	public static void main(String[] args) {
+		int pow=0;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the number");
+		int number=sc.nextInt();
+		System.out.println(FindLength(number));
+		System.out.println(findArmstrong(number,pow));
+		
+		
+	}
+	public static int FindLength(int number)
+	{ int pow=0;
+		while(number>0)
+		{
+			number=number%10;
+			pow+=pow;
+			number=number/10;
+			
+		}
+		return pow;
+	}
+	public static String findArmstrong(int number1,int pow)
+	{    double sum=0;
+		while(number1>0)
+		{
+			number1=number1%10;
+			sum=sum+Math.pow(number1,pow);
+			number1=number1/10;
+		}
+		if(sum==number1)
+			return "armstrong";
+		else
+			return "not armstrong";
+	}
+
+}

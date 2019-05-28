@@ -1,0 +1,26 @@
+package com.cg.flowcontrolAndExceptions;
+
+import java.util.Scanner;
+
+public class Exercise_4 {
+public static void main(String[] args) throws NullPointerException {
+	Scanner in=new Scanner(System.in);
+	String firstName=null;
+	String lastName=null;
+	try
+	{
+		 firstName=in.nextLine();
+		 lastName=in.nextLine();
+		if(firstName==null || lastName==null)
+			throw new Exception("Name cannot be empty");
+	}
+	catch(Exception e)
+	{
+		System.out.println(e.getMessage());
+	}
+	System.out.println(firstName+" "+lastName);
+		
+	}
+	
+	
+}

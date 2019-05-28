@@ -1,0 +1,23 @@
+package com.cg.collections;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Exercise_1 {
+public static void main(String[] args) {
+	Map<String,Integer> map=new HashMap<>();
+	map.put("one",1);
+	map.put("two", 2);
+	map.put("three", 3);
+	map.put("four", 4);
+	map.put("five", 5);
+	
+}
+static List<Integer> getValues(HashMap<String,Integer> map) 
+{
+	List<Integer> list=(List<Integer>)map.values();
+	
+	return list;
+}
+}

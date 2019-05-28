@@ -1,0 +1,5 @@
+cname=com.cg.dao.JdbcDaoImpl
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@localhost:1521:xe
+uname=system
+pwd=cmr

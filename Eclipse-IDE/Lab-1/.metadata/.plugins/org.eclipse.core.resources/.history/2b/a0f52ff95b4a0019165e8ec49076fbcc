@@ -1,0 +1,21 @@
+package com.cg.flowcontrolAndExceptions;
+
+import java.util.Scanner;
+
+public class Exercise_6 {
+public static void main(String[] args) {
+	String empName;
+	double salary;
+	Scanner in=new Scanner(System.in);
+	empName=in.next();
+	salary=in.nextDouble();
+	try
+	{
+		
+	}catch(EmployeeException e)
+	{
+		System.out.println(e.getMessage());
+	}
+	
+}
+}

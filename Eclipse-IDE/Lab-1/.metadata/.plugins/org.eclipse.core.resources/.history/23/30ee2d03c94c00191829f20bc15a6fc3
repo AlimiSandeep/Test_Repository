@@ -1,0 +1,40 @@
+package com.cg.client;
+
+import java.util.Scanner;
+
+import com.cg.util.NameException;
+import com.cg.util.ProductException;
+
+public class ProductClient {
+
+	static Scanner scan=new Scanner(System.in);
+	public static void main(String[] args) throws ProductException, NameException {
+		
+		String opt=null;
+		do
+		{
+			processMenu();
+			System.out.println("Press y to continue");
+			opt=scan.next();
+		}while(opt.equalsIgnoreCase("y"));
+		
+	
+	}
+	
+	public static void processMenu() throws ProductException, NameException
+	{
+		ProductUI obj=new ProductUI();
+		System.out.println("Enter the menu:\n\nADD\tVIEWBYID\tVIEWALL");
+		String str=scan.next();
+		Menu menu=Menu.valueOf(str.toUpperCase());
+		switch(menu)
+		{
+		
+		case ADD:obj.doAddProduct();break;
+		case VIEWBYID:obj.doDisplayById();break;
+		case VIEWALL:obj.doDisplayAll();break;	
+		default:System.out.println("Invalid Menu...!!");break;
+		}
+	}
+	
+}

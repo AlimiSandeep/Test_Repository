@@ -1,0 +1,35 @@
+package com.cg.collections;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Exercise_2 {
+public static void main(String[] args) {
+	Scanner in=new Scanner(System.in);
+	int charArraySize=in.nextInt();
+	char charArr[]=new char[charArraySize];
+	for(int i=0;i<charArraySize;i++)
+		charArr[i]=in.next().charAt(0);
+	Map<Character,Integer> map=countCharacter(charArr);
+	System.out.println(map);
+}
+static Map<Character,Integer> countCharacter(char[] charArr) 
+{
+	Map<Character,Integer> map=new HashMap<>();
+	for(Character ch:charArr)
+	{
+		if(map.containsKey(charArr[ch]))
+		{
+			map.put(ch, map.get(ch)+1);
+		}
+		else
+		{
+			map.put(ch, 1);
+		}
+	}	
+	
+return map;	
+}
+
+}

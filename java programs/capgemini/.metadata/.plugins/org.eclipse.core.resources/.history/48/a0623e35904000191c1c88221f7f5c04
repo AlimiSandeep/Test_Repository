@@ -1,0 +1,7 @@
+
+public class TestDemo {
+     
+	public static int doAdd(int a,int b){	
+		return a+b;	
+	}
+}

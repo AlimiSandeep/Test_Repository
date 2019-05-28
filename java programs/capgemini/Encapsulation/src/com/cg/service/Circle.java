@@ -1,0 +1,20 @@
+package com.cg.service;
+
+import com.cg.util.CgUtil;
+
+public class Circle {
+	private double radius;
+	
+	public Circle(double radius) throws Exception {
+	//super();
+		if(CgUtil.validatePositive(radius))
+		this.radius = radius;
+	}
+	public double calcArea(){
+		return Math.PI*radius*radius;
+	}
+	public double calcPerimeter(){
+		return 2*Math.PI*radius;
+	}
+
+}

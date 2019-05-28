@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+F:\Capgemini\cgworkspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1615272443.index
+2928810197.index
+1617909471.index
+3118715737.index
+1027628867.index

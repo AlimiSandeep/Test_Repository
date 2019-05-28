@@ -1,0 +1,28 @@
+package com.cg.flowcontrolAndExceptions;
+
+import java.util.Scanner;
+
+public class Exercise_6 {
+public static void main(String[] args) {
+	String empName;
+	double salary;
+	Scanner in=new Scanner(System.in);
+	empName=in.next();
+	salary=in.nextDouble();
+	try
+	{
+		validateSalary(sal);
+		System.out.println("Employee name="+empName+" Salary ="+salary);
+	}catch(EmployeeException e)
+	{
+		System.out.println(e.getMessage());
+	}
+	
+}
+static boolean validateSalary(double sal) throws EmployeeException
+{
+	if(sal<3000)
+		throw new EmployeeException("Salary cannot be less than 3000");
+	return true;
+}
+}

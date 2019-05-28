@@ -1,0 +1,6 @@
+com.capgemini.customerapp.bean
+com.capgemini.customerapp.dao
+com.capgemini.customerapp.exceptions
+com.capgemini.customerapp.service
+com.capgemini.customerapp.ui
+com.capgemini.customerapp.util

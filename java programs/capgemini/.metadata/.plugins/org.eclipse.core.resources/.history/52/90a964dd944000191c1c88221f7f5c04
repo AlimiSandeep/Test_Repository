@@ -1,0 +1,12 @@
+package com.cg.client;
+
+import java.util.Scanner;
+
+public class CircleClient {
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter radius");
+		double radius=scan.nextDouble();
+	}
+
+}
